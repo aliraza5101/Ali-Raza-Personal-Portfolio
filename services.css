@@ -1,0 +1,108 @@
+/* Services Section */
+.services {
+    padding-top: 80px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 25px;
+    padding-top:25px;
+}
+
+.services h2 span {
+    color: #ce0d0d; 
+}
+
+/* Service Box Container */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+/* Individual Service Box */
+.service-box {
+    background-color: #111;
+    padding: 30px;
+    width: 330px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Simple Hover Effect */
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px #ff0000;
+}
+
+/* Icon Styling */
+.service-box .icon {
+    font-size: 60px;
+    color: #ce0d0d;
+    transition: 0.3s;
+}
+
+.service-box:hover .icon {
+    color: #ce0d0d;
+}
+
+/* Title Styling */
+.service-box h3 {
+    font-size: 26px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+/* Text Styling */
+.service-box p {
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Button Styling */
+.btn2 {
+    margin-top: 30px;
+    margin-right: 13px;
+    margin-bottom: 10px;
+    border: 2px solid #ce0d0d;
+    background: #ce0d0d; /* Neon Red Background */
+    color: white;  /* Default text color white */
+    padding: 3px 30px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 60px;
+    cursor: pointer;
+    transform: scale(1.15); /* Slightly bigger */
+    box-shadow: 0 0 5px #ce0d0d, 0 0 5px #ce0d0d, 0 0 5px #ce0d0d;
+    transition: opacity 1s ease-out 0.9s, transform 1s ease-out 0.9s;
+}
+
+/* Hover Effect (Optional - for slight interaction) */
+.btn2:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px #ce0d0d, 0 0 20px #ce0d0d, 0 0 30px #ce0d0d;
+}
+
+/* ========== Services Animation ========== */
+.service-box {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.service-box.show {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+

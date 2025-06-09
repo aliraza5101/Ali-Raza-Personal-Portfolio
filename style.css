@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* Hero Section Animation */
+.hero {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+}
+
+/* Cursor Blinking Effect */
+.cursor {
+    font-weight: bold;
+    color: #ce0d0d;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;}
+
+body {
+    background-color: #000000;
+    color: #fff;
+    transform: scale(1); /* 1.1 means 110% */
+    transform-origin: top left;
+    width: 100%; /* Adjust width to avoid horizontal scroll */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 28%;
+    background: #0c0b0b;
+    top:0px;
+    width:100;
+    z-index: 100;
+    position: sticky;
+}
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #ce0d0d;
+    margin: 5px 0;
+}
+/* Logo */
+.logo {
+    font-size: 34px;
+    font-weight: 700;
+    position: absolute;
+    left: 10%;
+    display: inline-block;
+}
+
+/* "Port" remains white */
+.logo .white-text {
+    color: white;
+}
+
+/* "Folio" gets gradient effect */
+.logo .folio {
+    background-image: linear-gradient(135deg, #ce0d0d, #eb250b, #800000);
+    color: transparent; /* Hide original text */
+    display: inline-block;
+    font-weight: bold;
+    -webkit-background-clip: text;
+}
+
+
+/* Navigation Menu */
+nav {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Centering the menu */
+    flex-grow: 2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s;
+    position: relative; /* Required for ::after */
+}
+
+/* Underline effect */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust underline position */
+    width: 0;
+    height: 2px;
+    font-weight: 400;
+    background-color: #AC0000;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    color: #AC0000;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* Contact Button */
+.contact-btn {
+    margin-left: 20px;
+    border: 2px solid #ce0d0d;
+    background: transparent;
+    color: #ce0d0d; 
+    padding: 7px 25px;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    right: 10%;
+    text-decoration: none; /* Removes underline */
+    transition: opacity 1s ease-out 0.9s, transform 1s ease-out 0.9s;
+    
+    
+}
+
+.contact-btn:hover {
+    background: #ce0d0d;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ce0d0d, 0 0 20px #ce0d0d, 0 0 40px #ce0d0d;
+}
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 170px;
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+.hero-content {
+    max-width: 80%;
+}
+
+.hero-content h3 {
+    font-size: 26px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ce0d0d, #eb250b, #800000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;   
+}
+
+.hero-content h2 {
+    font-size: 32px;
+}
+
+.hero-content .typed-text {
+    font-weight: bold;
+    color: #ce0d0d;
+}
+
+.hero-content .cursor {
+    color: #ce0d0d;
+    font-size: 32px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.hero-content p {
+    font-size: 15px;
+    margin-top: 15px;
+    width: 600px;
+}
+
+/* Social Icons Wrapper */
+.social-icons {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Neon Styled Social Icons */
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;  /* Balanced spacing */
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 20px; /* Proportional icon size */
+    color: #ce0d0d;
+    background: transparent;
+    width: 45px;  /* Adjusted size */
+    height: 45px;
+    border-radius: 60%;
+    text-decoration: none;
+    border: 2px solid #ce0d0d; /* Neon Red Border */
+    transition: opacity 1s ease-out 0.9s, transform 1s ease-out 0.9s;
+}
+
+/* Hover Effect - Brighter Glow */
+.social-icons a:hover {
+    background: #ce0d0d; /* Neon Red Background */
+    color: white;
+    transform: scale(1.1); /* Slightly bigger on hover */
+    box-shadow: 0 0 10px #ce0d0d, 0 0 20px #ce0d0d, 0 0 40px #ce0d0d;
+}
+
+
+.about-btn {
+    margin-top: 25px;
+    margin-right: 13px;
+    border: 2px solid #ce0d0d; /* Same Neon Red Border */
+    background:#ce0d0d;
+    color: #000000; /* Text Color Same as Contact Button */
+    padding: 6px 35px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 60px; /* Rounded Button */
+    cursor: pointer;
+    transition: 0s;
+    text-decoration: none;
+}
+
+.about-btn:hover {
+    background: #ce0d0d;
+    color: white;
+    box-shadow: 0 0 10px #ce0d0d, 0 0 20px #ce0d0d, 0 0 40px #ce0d0d;
+}
+
+.hero-image {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px; /* 3D depth */
+}
+
+.hero-image img {
+    width: 380px;
+    height: auto;
+    border-radius: 100%;
+    border: 0px solid #ce0d0d;
+    filter: brightness(1) contrast(1.1) drop-shadow(0 0 15px #ce0d0d);
+}
+

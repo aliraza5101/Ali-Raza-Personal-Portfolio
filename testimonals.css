@@ -1,0 +1,106 @@
+/* Testimonial Section */
+.testimonial-section {
+    width: 90%;
+    max-width: 1200px;
+    padding: 230px 50px;
+    margin: 0 auto;  /* Centering the entire section */
+    margin-bottom: -100px;
+}
+
+/* Main Heading (Perfect Centered with Proper Spacing) */
+.testimonial-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ce0d0d;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 120px; /* Gap increase */
+    margin-top: -120px;
+}
+.testimonial-title span{
+    color: #ffffff;
+}
+/* Testimonial Container */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Testimonial Box */
+.testimonial-box {
+    background: #111111;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 350px;
+    max-height: 400px;
+    position: relative;
+    box-shadow: 0 0 15px #ffffff1a;
+    transition: transform 0.3s ease-in-out;
+}
+/* Initial State (Hidden & Scaled Down) */
+.testimonial-box {
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* When Animation Triggers */
+.testimonial-box.animated {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+
+
+/* Profile Image */
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 5px solid #111111;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Testimonial Content */
+.testimonial-content {
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* Quote Icon */
+.quote-icon {
+    font-size: 6rem;
+    color: #ce0d0d;
+    display: block;
+    margin-top: -30px;
+    margin-bottom: -60px;
+}
+
+/* Testimonial Text */
+.testimonial-content p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+/* Client Name */
+.client-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ce0d0d;
+    margin-top: 15px;
+}
+
+/* Client Role */
+.client-role {
+    font-size: 0.9rem;
+    color: #bbb;
+    display: block;
+}

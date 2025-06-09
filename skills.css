@@ -1,0 +1,78 @@
+/* Section Heading */
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: -70px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.section-heading span{
+    color: #C80D0D;
+}
+/* Skills Section */
+.skills-container {
+    text-align: center;
+    padding: 60px 20px; /* Adjusted padding to prevent overflow */
+    background: #111111;
+}
+
+/* Skills Wrapper */
+.skills-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #111;
+    padding: 120px 0; /* Reduced padding to fit everything properly */
+}
+
+/* Skill Circle */
+.skill-circle {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+}
+
+/* Skill Name (Centered Below the Circle) */
+.skill-name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* Progress Bar Background */
+.progress-bg {
+    fill: none;
+    stroke: #333;
+    stroke-width:8;
+}
+
+/* Progress Bar */
+.progress {
+    fill: none;
+    stroke: #ce0d0d;
+    stroke-width: 9;
+    stroke-linecap: round;
+    stroke-dasharray: 251;
+    stroke-dashoffset: 251;
+    transition: stroke-dashoffset 1.5s ease-out, transform 1.5s ease-in-out;
+    transform-origin: center;
+}
+
+/* Percentage Text */
+.percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}

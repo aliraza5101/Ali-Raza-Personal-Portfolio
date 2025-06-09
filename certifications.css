@@ -1,0 +1,158 @@
+/* ===== Certifications Section Styling ===== */
+#certifications {
+    background: #000000; /* Dark Background */
+    padding-top: 70px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    color: #f1f1f1; /* Soft White */
+    padding-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title span {
+    color: #ce0d0d; /* Soft Blue for a Corporate Look */
+}
+
+/* Certifications Wrapper */
+.certification-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Certification Card */
+.cert-card {
+    background: #111111; /* Dark Grey Card */
+    padding: 20px;
+    border-radius: 8px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); /* Subtle Shadow */
+    border: 0px solid #333; /* Soft Border */
+    transition: 0.3s ease-in-out;
+}
+
+/* Certificate Image */
+.cert-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #534d4d;
+}
+
+/* Certificate Content */
+.cert-content {
+    padding: 20px 10px;
+}
+
+.cert-content h3 {
+    color: #ffffff; /* White Text */
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.cert-content p {
+    color: #bbbbbb; /* Light Grey for Readability */
+    font-size: 14px;
+}
+
+/* View Certificate Button */
+.view-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 8px 18px;
+    background: #ce0d0d;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight:500;
+    font-size: 13px;
+    transition: 0.3s;
+    border: none;
+    transition: opacity 1s ease-out 0.9s, transform 1s ease-out 0.9s;
+}
+
+.view-btn:hover {
+    background: #ce0d0d;
+    color: white;
+    box-shadow: 0 0 10px #ce0d0d, 0 0 20px #ce0d0d, 0 0 40px #ce0d0d;
+}
+
+/* Hover Effect */
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px #ff0000;
+}
+
+/* ========== Certifications Animation ========== */
+.cert-card {
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.cert-card.show {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+    animation: bounce 0.6s ease-out;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-10px); }
+    60% { transform: translateY(5px); }
+    100% { transform: translateY(0); }
+}
+.certifications-btn {
+    margin-top: 25px;
+    margin-right: 13px;
+    border: 2px solid #ce0d0d; /* Same Neon Red Border */
+    background:#ce0d0d;
+    color: #000000; /* Text Color Same as Contact Button */
+    padding: 6px 35px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 60px; /* Rounded Button */
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-out 0.9s, transform 1s ease-out 0.9s;
+}
+
+.certifications-btn:hover {
+    background: #ce0d0d;
+    color: white;
+    box-shadow: 0 0 10px #ce0d0d, 0 0 20px #ce0d0d, 0 0 40px #ce0d0d;
+}
+/* Initial Hidden State */
+.cert-card {
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* When Animation Triggers */
+.cert-card.animated {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    animation: bounceEffect 0.5s ease-out;
+}
+
+/* Subtle Bounce Effect */
+@keyframes bounceEffect {
+    0% { transform: translateY(0); }
+    40% { transform: translateY(-8px); }
+    80% { transform: translateY(4px); }
+    100% { transform: translateY(0); }
+}

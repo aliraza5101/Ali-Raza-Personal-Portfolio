@@ -1,0 +1,110 @@
+/* Contact Section Animation*/
+.contact-form input, 
+.contact-form textarea, 
+.contact-form button, 
+.info-box {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+/* Contact Section Styling */
+.contact {
+    background-color: #111111;
+    text-align: center;
+    padding-bottom:100px;
+    padding-top:80px;
+}
+
+/* Section Title */
+.section-title {
+    color: #ffffff;
+    padding-top: 20px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: #111111 ;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    margin-top: 5px;
+    border: 2px solid #ce0d0d; /* Same Neon Red Border */
+    background:#ce0d0d;
+    color: #000000; /* Text Color Same as Contact Button */
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px; /* Rounded Button */
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    transition: opacity 1s ease-out 0.9s, transform 1s ease-out 0.9s;
+}
+
+.contact-form button:hover {
+    background: #ce0d0d;
+    color: white;
+    box-shadow: 0 0 10px #ce0d0d, 0 0 20px #ce0d0d, 0 0 40px #ce0d0d;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 30px;
+}
+
+.info-box {
+    text-align: center;
+    color: white;
+}
+
+.info-box i {
+    margin-top: 15px;
+    font-size: 2.5rem; /* Icons thore chhote ho gaye */
+    color: #CE0D0D; /* Sirf icons ka color yellow */
+    margin-bottom: 15px;
+}
+
+.info-box h3 {
+    font-size: 1.5em;
+    color: white; /* Text ka color white */
+    margin-bottom: 5px;
+}
+
+.info-box p {
+    font-size: 1rem ;
+    color: white; /* Neechy ka text bhi white */
+}
