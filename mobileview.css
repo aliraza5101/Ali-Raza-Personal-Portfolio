@@ -1,89 +1,93 @@
-/* 📱 Real Mobile View Design */
-@media (max-width: 768px) {
+/* 📱 Responsive Design for Tablets & Mobiles */
+@media (max-width: 991px) {
   header {
     flex-direction: column;
-    padding: 10px 20px;
-    align-items: flex-start;
+    padding: 15px;
   }
 
   .logo {
-    position: relative;
-    left: 0;
-    font-size: 24px;
+    position: static;
     margin-bottom: 10px;
-  }
-
-  .hamburger {
-    display: flex;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-
-  nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #111;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 10px;
-  }
-
-  nav.active {
-    display: flex;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  nav ul li a {
-    font-size: 16px;
-    padding: 8px 0;
   }
 
   .contact-btn {
     position: static;
-    margin: 10px 0 0 0;
+    margin-top: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
   }
 
   .hero {
     flex-direction: column;
+    padding: 60px 30px;
     text-align: center;
-    padding: 50px 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
   }
 
   .hero-content h1 {
-    font-size: 34px;
+    font-size: 42px;
   }
 
   .hero-content h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .hero-content p {
-    font-size: 14px;
     width: 100%;
+    font-size: 14px;
   }
 
-  .hero-image img {
-    width: 220px;
-    margin-top: 20px;
+  .hero-image {
+    margin-top: 30px;
   }
 
-  .about-container, .service-container,
-  .skills-section, .testimonial-container,
-  .contact-container {
+  .about-container {
     flex-direction: column;
+    align-items: center;
     padding: 20px;
   }
 
-  .certification-wrapper, .edu-timeline {
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .about-image img {
+    width: 220px;
+    height: auto;
+  }
+
+  .service-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .skills-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .testimonial-container {
     flex-direction: column;
     gap: 20px;
+    padding: 10px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
   }
 
   .contact-form, .contact-info {
@@ -93,60 +97,36 @@
   .footer-sect {
     text-align: center;
     padding: 10px;
-  }
-}
-
-/* ✅ HERO IMAGE on Mobile */
-@media (max-width: 768px) {
-  .hero-image {
     width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-  }
-
-  .hero-image img {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 15px #ce0d0d;
   }
 }
 
-/* ✅ ABOUT SECTION IMAGE */
-@media (max-width: 768px) {
-  .about-image img {
-    width: 80%;
-    max-width: 260px;
-    border-radius: 15px;
-    margin: 0 auto;
-    display: block;
-    object-fit: cover;
-    box-shadow: 0 0 10px #ce0d0d;
+/* 📱 Extra small devices (phones) */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 32px;
   }
 
-  .about-content {
-    padding-top: 20px;
-    text-align: center;
-  }
-}
-
-/* ✅ TESTIMONIAL IMAGE FIXES */
-@media (max-width: 768px) {
-  .testimonial-box .profile-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    box-shadow: 0 0 5px #ce0d0d;
+  .hero-content h2, .cursor {
+    font-size: 18px;
   }
 
-  .testimonial-content {
-    text-align: center;
+  .hero-content p {
+    font-size: 13px;
+  }
+
+  .social-icons a {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .about-btn, .certifications-btn {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+
+  .service-box {
+    padding: 10px;
   }
 }
-
