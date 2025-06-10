@@ -1,93 +1,89 @@
-/* 📱 Responsive Design for Tablets & Mobiles */
-@media (max-width: 991px) {
+/* 📱 Real Mobile View Design */
+@media (max-width: 768px) {
   header {
     flex-direction: column;
-    padding: 15px;
+    padding: 10px 20px;
+    align-items: flex-start;
   }
 
   .logo {
-    position: static;
+    position: relative;
+    left: 0;
+    font-size: 24px;
     margin-bottom: 10px;
   }
 
-  .contact-btn {
-    position: static;
-    margin-top: 10px;
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
   nav {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    width: 100%;
+    background: #111;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  nav.active {
+    display: flex;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 12px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .contact-btn {
+    position: static;
+    margin: 10px 0 0 0;
   }
 
   .hero {
     flex-direction: column;
-    padding: 60px 30px;
     text-align: center;
-  }
-
-  .hero-content {
-    max-width: 100%;
+    padding: 50px 20px;
   }
 
   .hero-content h1 {
-    font-size: 42px;
+    font-size: 34px;
   }
 
   .hero-content h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .hero-content p {
-    width: 100%;
     font-size: 14px;
+    width: 100%;
   }
 
-  .hero-image {
-    margin-top: 30px;
-  }
-
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .about-content h2 {
-    font-size: 28px;
-  }
-
-  .about-image img {
+  .hero-image img {
     width: 220px;
-    height: auto;
+    margin-top: 20px;
   }
 
-  .service-container {
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-  }
-
-  .skills-section {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .testimonial-container {
-    flex-direction: column;
-    gap: 20px;
-    padding: 10px;
-  }
-
+  .about-container, .service-container,
+  .skills-section, .testimonial-container,
   .contact-container {
     flex-direction: column;
     padding: 20px;
+  }
+
+  .certification-wrapper, .edu-timeline {
+    flex-direction: column;
+    gap: 20px;
   }
 
   .contact-form, .contact-info {
@@ -96,37 +92,6 @@
 
   .footer-sect {
     text-align: center;
-    padding: 10px;
-    width: 100%;
-  }
-}
-
-/* 📱 Extra small devices (phones) */
-@media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 32px;
-  }
-
-  .hero-content h2, .cursor {
-    font-size: 18px;
-  }
-
-  .hero-content p {
-    font-size: 13px;
-  }
-
-  .social-icons a {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
-  }
-
-  .about-btn, .certifications-btn {
-    padding: 8px 20px;
-    font-size: 12px;
-  }
-
-  .service-box {
     padding: 10px;
   }
 }
