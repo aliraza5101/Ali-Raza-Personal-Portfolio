@@ -95,3 +95,58 @@
     padding: 10px;
   }
 }
+
+/* ✅ HERO IMAGE on Mobile */
+@media (max-width: 768px) {
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px #ce0d0d;
+  }
+}
+
+/* ✅ ABOUT SECTION IMAGE */
+@media (max-width: 768px) {
+  .about-image img {
+    width: 80%;
+    max-width: 260px;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 0 10px #ce0d0d;
+  }
+
+  .about-content {
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+/* ✅ TESTIMONIAL IMAGE FIXES */
+@media (max-width: 768px) {
+  .testimonial-box .profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px #ce0d0d;
+  }
+
+  .testimonial-content {
+    text-align: center;
+  }
+}
+
